@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>World News</title>
+</head>
+<body>
+
+<!-- SITE HEADER -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__wrap">
+                <p class="news-title">News</p>
+                <form class="site-header__form" action="#" method="post">
+                    <input class="site-header__input" type="search" placeholder="Search news...">
+                </form>
+            </div>
+        </div>
+        <div class="site-header__list-wrap">
+            <div class="container">
+                <div>
+                    <div class="site-header__control">
+                        <ul class="site-header__list">
+                            <li class="site-header__item">Business</li>
+                            <li class="site-header__item">Entertainment</li>
+                            <li class="site-header__item">General</li>
+                            <li class="site-header__item">Health</li>
+                            <li class="site-header__item">Science</li>
+                            <li class="site-header__item">Sports</li>
+                            <li class="site-header__item">Technology</li>
+                        </ul>
+                        <form class="site-header__select-form" method="post">
+                            <select class="site-header__country-select">
+                                <option value="us">America</option>
+                                <option value="ae">United Arab Emirates</option>
+                                <option value="ar">Argentina</option>
+                                <option value="at">Austria</option>
+                                <option value="au">Australia</option>
+                                <option value="be">Belgiya</option>
+                                <option value="bg">Bolgariya</option>
+                                <option value="br">Braziliya</option>
+                                <option value="ca">Canada</option>
+                                <option value="ch">Switzerland</option>
+                                <option value="cn">Xitoy</option>
+                                <option value="ru">Rossiya</option>
+                                <option value="ua">Ukraina</option>
+                                <option value="de">Germaniya</option>
+                                <option value="jp">Yaponiya</option>
+                                <option value="it">Italiya</option>
+                                <option value="kr">South Korea</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- SITE-MAIN -->
+    <main class="site-main">
+        <!-- News section -->
+        <section class="news">
+            <div class="container">
+                <div class="news__wrap">
+                    <ul class="news__list"></ul>
+                    <div class="top-company">
+                        <div class="top-company__text-wrap">
+                            <p class="top-company__name">Tesla</p>
+                            <p class="top-company__name">Apple</p>
+                            <p class="top-company__name">Microsoft</p>
+                        </div>
+                        <ul class="top-company__list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+<!--  TOP COMPANY TEMPLATE  -->
+    <template class="top-company-template">
+        <li class="top-company__item">
+            <img class="top-company__img" src="" alt="">
+            <h3 class="top-company__subtitle"></h3>
+        </li>
+    </template>
+
+<!-- NEWS TEMPLATE  -->
+    <template class="news-template">
+        <li class="news__item">
+            <div class="news__img-wrap">
+                <div class="news__time-wrap">
+                    <time class="news__add-time"></time>
+                </div>
+                <img class="news__img" src="" alt="">
+            </div>
+            <div class="news__info-wrap">
+                <h3 class="news__subtitle"></h3>
+                <p class="news__description"></p>
+            </div>
+        </li>
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>
